@@ -12,7 +12,7 @@ async function loadWeather() {
 
   const response = await fetch(
 
-    
+
     `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`,
   )
   const data = await response.json()
@@ -97,6 +97,10 @@ async function loadWeather() {
 loadWeather()
 
 
-// ! 18:05
+// ! 18:30
 
-// сделайте deploy на git pages вашего проекта
+// сделайте header и footer
+// оберните карточку в тег main - в нем будет находится основная информация на странице
+// в header две ссылки - на следующую страницу (в href пока оставьте пустую строку) и на главную
+
+

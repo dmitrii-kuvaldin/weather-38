@@ -1,6 +1,8 @@
 body {
   display: flex;
-  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  flex-direction: column;
   background: #ff7e5f;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f);
@@ -10,7 +12,28 @@ body {
 
 }
 
+.header {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  background-color: rgb(172, 200, 255);
+  min-height: 60px;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.footer {
+  width: 100%;
+  min-height: 50px;
+  background-color: rgb(211, 211, 211);
+}
+
 .weatherCard {
+  /* height: 400px; */
   background-color: lightcyan;
   max-width: 700px;
   box-sizing: border-box;
@@ -21,10 +44,10 @@ body {
 }
 
 .show {
-  display: block;
+  display: inline-block;
 }
 
-.weatherCard > p {
+.weatherCard>p {
   width: 100%;
 }
 
